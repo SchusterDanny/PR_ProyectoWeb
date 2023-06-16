@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Diseño página web ECOhood" />
+  <meta name="autor" content="Danny Schuster" />
+  <title>Contactando a ECOhood</title>
+  <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="header1">
+      <a href="./index.html"><img class="imgSize" style="width: 350px;" src="./images/Logo.jpg" title="logo"
+          alt="logo" />
+      </a>
+      <div class="search-container1">
+        <input style="margin: 0px;" type="text" placeholder="Buscar">
+        <button type="submit"><img style="width: 16px;" src="./images/Iconos/Lupa.png" title="lupa"
+            alt="lupa" /></button>
+      </div>
+      <div class="images-container">
+        <a href="#"><img class="imgSize" style="width: 100px;" src="./images/Iconos/Carrito.jpg" title="cesta"
+            alt="cesta" /></a>
+        <a href="#"><img class="imgSize" style="width: 100px;" src="./images/Iconos/Perfil.jpg" title="perfil"
+            alt="perfil" /></a>
+      </div>
+    </div>
+    <div class="header2">
+      <a href="./index.html"><img class="imgSize" style="width: 200px;" src="./images/Logo.jpg" title="logo"
+          alt="logo" />
+      </a>
+      <a href="#"><img class="imgSize" style="width: 60px;" src="./images/Iconos/Carrito.jpg" title="cesta"
+          alt="cesta" /></a>
+      <a href="#"><img class="imgSize" style="width: 60px;" src="./images/Iconos/Perfil.jpg" title="perfil"
+          alt="perfil" /></a>
+    </div>
+    <div class="searchnav">
+      <div class="search-container2">
+        <input style="margin: 0px; background-color: white;" type="text" placeholder="Buscar">
+        <button type="submit"><img style="width: 16px;" src="./images/Iconos/Lupa.png" title="lupa"
+            alt="lupa" /></button>
+      </div>
+    </div>
+
+    <nav class="navmovil">
+      <a class="hambur" href="#"><img style="width: 40px;" src="./images/Iconos/hamburguesa2.png" alt="menú"></a>
+      <div class="opcioneshambur">
+        <ul class="menu">
+          <li><a class="a-menu" href="./producto.html">Productos</a></li>
+          <li><a class="a-menu" href="#">Recetas</a></li>
+          <li><a class="a-menu" href="./nosotros.html">Nosotros</a></li>
+          <li><a class="a-menu" href="./contactar.html">Contactar</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navescritorio">
+      <div class="menu-container">
+        <ul class="menu">
+          <li><a class="a-menu" href="./producto.html">Productos</a></li>
+          <li><a class="a-menu" href="#">Recetas</a></li>
+          <li><a class="a-menu" href="./nosotros.html">Nosotros</a></li>
+          <li><a class="a-menu" href="./contactar.html">Contactar</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Formulario de contacto</h1>
+
+    <div class="main-container">
+      <div class="main-side"></div>
+
+      <div class="main-center-formulario">
+        <form>
+          <fieldset>
+            <legend>Datos Personales</legend>
+            <div class="labelalign">
+              <div class="formsize">
+                <label for="nombre">Nombres y Apellidos: </label>
+              </div>
+              <div class="formsize">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombres y Apellidos" required />
+              </div>
+            </div>
+            <div class="labelalign">
+              <div class="formsize">
+                <label for="local">Localidad o Ciudad: </label>
+              </div>
+              <div class="formsize">
+                <input type="text" id="local" name="local" placeholder="Localidad o Ciudad" required />
+              </div>
+            </div>
+            <div class="labelalign">
+              <div class="formsize">
+                <label for="estado">Estado o Provincia: </label>
+              </div>
+              <div class="formsize">
+                <input type="text" id="estado" name="estado" placeholder="Estado o Provincia" required />
+              </div>
+            </div>
+            <div class="labelalign">
+              <div class="formsize">
+                <label for="pais">País: </label>
+              </div>
+              <div class="formsize">
+                <input type="text" id="pais" name="pais" placeholder="País" required />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Datos de Contacto</legend>
+            <div class="labelalign">
+              <div class="formsize">
+                <label for="email">Email: </label>
+              </div>
+              <div class="formsize">
+                <input type="email" id="email" name="email" placeholder="Email" required />
+              </div>
+            </div>
+            <div class="labelalign">
+              <div class="formsize">
+                <label for="telefono">Teléfono: </label>
+              </div>
+              <div class="formsize">
+                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Disponibilidad y Comentarios</legend>
+            <div class="labelalign">
+              <div class="formsize">
+                <label for="fecha">Disponibilidad:</label>
+              </div>
+              <div class="formsize">
+                <input type="date" id="fecha" name="fecha">
+              </div>
+            </div>
+            <div style="text-align: left; margin-left: 100px;">
+              <label for="comentario">Escribenos tu comentario:</label>
+            </div>
+            <div>
+              <textarea id="comentario" name="comentario" style="width: 80%; height: 150px;"> </textarea>
+            </div>
+
+          </fieldset>
+
+          <div class="divformbutton">
+            <button class="formbutton" type="submit">Enviar</button>
+            <button class="formbutton" type="reset">Resetear</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="main-side"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-side"></div>
+
+      <div class="footer-center">
+        <h1>ECOhood</h1>
+        <a href="#">Instalaciones</a>
+        <br>
+        <a href="#">Trabajadores</a>
+        <br>
+        <a href="#">Noticias</a>
+      </div>
+      <div class="footer-center">
+        <h1>Siguenos</h1>
+        <div class="center">
+          <a style="margin: 0px;" href="#"><img style="width: 100px;padding: 5px;"
+              src="./images/Iconos/iconoFacebook.png" alt="facebook"></a>
+          <a style="margin: 0px;" href="#"><img style="width: 100px;padding: 5px;"
+              src="./images/Iconos/iconoTwitter.png" alt="twitter"></a>
+          <a style="margin: 0px;" href="#"><img style="width: 100px;padding: 5px;"
+              src="./images/Iconos/iconoInstagram.png" alt="instagram"></a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <h1>¿Dónde estamos?</h1>
+        <p>
+          <strong>Dirección:</strong> Rivas, P.º de la Chopera, 4, 28523 Madrid
+        </p>
+        <p>
+          <strong>Zonas de servicio:</strong> Rivas-Vaciamadrid y zonas cercanas
+        </p>
+        <p>
+          <strong>Horario:</strong> 10:00 - 20:30
+        </p>
+        <p>
+          <strong>Teléfono:</strong> 640 00 00 00
+        </p>
+      </div>
+
+      <div class="footer-side"></div>
+    </div>
+    <p class="footerp">
+      ©copyright 2023
+    </p>
+  </footer>
+</body>
+
+</html>
